@@ -110,15 +110,15 @@ const Home = () => {
         const generatedOn = `Generated on: ${new Date().toLocaleString()}`;
         doc.setFontSize(10);                           
         doc.setTextColor(150);
-        doc.text(generatedBy, 20, 10); 
-        doc.text(generatedOn, 20, 15); 
+        doc.text(generatedBy, 20, 25); 
+        doc.text(generatedOn, 20, 30); 
 
         doc.setDrawColor(200); 
         doc.line(20, 18, 190, 18); 
 
         doc.setTextColor(0); 
         doc.setFontSize(16); 
-        doc.text('Employee List', 20, 30);
+        doc.text('Employee List', 20, 10);
         const tableData = employees.map((emp, index) => [
             index + 1,
             emp.name,
@@ -146,9 +146,6 @@ const Home = () => {
             body: tableData,
             startY: 40,
         });
-
-
-
         doc.save('Employee_List.pdf');
     };
 
