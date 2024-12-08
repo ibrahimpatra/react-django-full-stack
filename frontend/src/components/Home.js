@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import EmployeeForm from './EmployeeForm';
-import generatePDF from '../utils/generatePDF'; // Import the PDF function
+import generatePDF from '../utils/generatePDF'; 
 import './Home.css';
 
 const Home = () => {
