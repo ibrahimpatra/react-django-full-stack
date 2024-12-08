@@ -38,7 +38,7 @@ const EmployeeForm = ({ onAdd, onCancel, selectedEmployee, onUpdate }) => {
             <div>
                 <label>Phone Number:</label>
                 <input
-                    type="text"
+                    type="number"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     required
